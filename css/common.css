@@ -13,13 +13,14 @@ body {
   line-height: 1.5;
 }
 
-ul {
+/* ul {
   list-style: none;
-}
+} */
 
 .gallery {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  gap: 48px 24px;
 }

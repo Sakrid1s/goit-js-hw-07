@@ -36,8 +36,8 @@ const markup = images
                 class="gallery-image"
                 src="${image.url}"
                 alt="${image.alt}"
-                width="260"
-                height="260"
+                width="360"
+                height="300"
               /></li>`
   )
   .join('');
