@@ -10,6 +10,7 @@ const boxesDiv = document.querySelector('div#boxes');
 const userInput = document.querySelector('input');
 
 function createBoxes(amount) {
+  boxesDiv.innerHTML = '';
   let size = 30;
   for (let i = 0; i < amount; i++) {
     const box = document.createElement('div');
@@ -23,7 +24,7 @@ function createBoxes(amount) {
 
 createBtn.addEventListener('click', () => {
   const amount = userInput.value;
-  if (amount > 0 && amount <= 100) {
+  if (amount >= 1 && amount <= 100) {
     createBoxes(amount);
     userInput.value = '';
   }
