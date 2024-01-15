@@ -22,7 +22,7 @@ function createBoxes(amount) {
 }
 
 createBtn.addEventListener('click', () => {
-  const amount = Math.round(userInput.value);
+  const amount = userInput.value;
   if (amount > 0 && amount <= 100) {
     createBoxes(amount);
     userInput.value = '';
